@@ -1,0 +1,27 @@
+{
+  "name": "feedback-collection-app",
+  "version": "1.0.0",
+  "description": "A fullstack app f",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.19.0",
+    "npm": ">=6.14.8"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggLuigi/FullStack-Web-app-NodeJs-React-Redux-Express-MongoDB.git"
+  },
+  "author": "ggLuigi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggLuigi/FullStack-Web-app-NodeJs-React-Redux-Express-MongoDB/issues"
+  },
+  "homepage": "https://github.com/ggLuigi/FullStack-Web-app-NodeJs-React-Redux-Express-MongoDB#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
