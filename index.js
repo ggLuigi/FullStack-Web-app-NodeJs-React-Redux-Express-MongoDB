@@ -11,7 +11,10 @@ const app = express();
  * app.get is calling a brand new route handler
  */
 app.get('/', (req, res) => {
-    res.send({ hi: 'there' });
+    res.send({
+        hi: 'there',
+        hello: 'world'
+    });
 });
 
 const PORT = process.env.PORT || 5000;
