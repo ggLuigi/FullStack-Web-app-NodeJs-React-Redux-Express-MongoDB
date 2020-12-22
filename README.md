@@ -22,6 +22,8 @@ It helps user to send email to their customers to collect feedback, then gather 
 
 It uses: 
 * NodeJS, Express to handle HTTP traffic
-* Heroku to deploy the application (with the aid of git)
+* Heroku to deploy the application (with the aid of git) -> The heroku server link: https://aqueous-sands-83722.herokuapp.com/
 * Google OAuth to handle account
+* Passport JS with passport-google-oauth20 to help with google oauth setup for our setup to obtain users' profile and email for registration
+* Nodemon npm package to help with automatically update the local server for changes
 

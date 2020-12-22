@@ -1,7 +1,7 @@
 {
   "name": "feedback-collection-app",
   "version": "1.0.0",
-  "description": "A fullstack app f",
+  "description": "A fullstack app",
   "main": "index.js",
   "engines": {
     "node": ">=12.19.0",
@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/ggLuigi/FullStack-Web-app-NodeJs-React-Redux-Express-MongoDB#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "nodemon": "^2.0.6",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0"
   }
