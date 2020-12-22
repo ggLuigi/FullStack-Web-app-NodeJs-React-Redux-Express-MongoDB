@@ -1,4 +1,5 @@
-# FullStack-Web-app-NodeJs-React-Redux-Express-MongoDB
+# Node with React: Fullstack Web Development
+FullStack-Web-app-NodeJs-React-Redux-Express-MongoDB
 The course from Udemy: https://harmonic-owlstars.udemy.com/course/node-with-react-fullstack-web-development/learn/lecture/7593644#overview
 
 
@@ -14,4 +15,13 @@ It helps user to send email to their customers to collect feedback, then gather 
 6. Customers answer the survey
 7. App tabulates feedback
 8. User can see report of survey responses
+
+## Development
+
+### Server side
+
+It uses: 
+* NodeJS, Express to handle HTTP traffic
+* Heroku to deploy the application (with the aid of git)
+* Google OAuth to handle account
 
