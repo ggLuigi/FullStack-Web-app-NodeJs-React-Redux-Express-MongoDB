@@ -26,4 +26,5 @@ It uses:
 * Google OAuth to handle account
 * Passport JS with passport-google-oauth20 to help with google oauth setup for our setup to obtain users' profile and email for registration
 * Nodemon npm package to help with automatically update the local server for changes
-
+* MongoDB is our database choice. Mongoose library is used to connect MongoDB that hosted on Atlas.
+* Cookie-session npm package is used to extract cookie data

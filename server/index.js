@@ -1,25 +1,26 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const cookieSession = require('cookie-session');
+const passport = require('passport');
 
+require('./models/User');   // define the User schema first
 require('./services/passport');  // It is not returning anything, just require it.
+const keys = require('./config/keys');
 
-
+mongoose.connect(keys.mongoURI);    // Connect to mongo DB
 // Create the first Express application
-// It represents a running Express app
-// The app is used to setup configuration that will listen for incoming request from Node, then pass on to Route Handler
 const app = express();
 
+app.use(
+    cookieSession({
+        maxAge: 2 * 60 * 1000,   // 30 days in ms
+        keys: [keys.cookieKey]   // encrypt the cookies with the key
+    })
+);
+app.use(passport.initialize()); // initialize() to connect with express app as middleware
+app.use(passport.session());    // This helps to persist the login session
+
 require('./routes/authRoutes')(app);    // Get the function returned from authRoutes and immediately call the function with app param.
-/**
- * go to diagrams\App-overview-diagrams.xml
- * 001 - request types
- * app.get is calling a brand new route handler
- */
-// app.get('/', (req, res) => {
-//     res.send({
-//         hi: 'there',
-//         hello: 'world'
-//     });
-// });
 
 const PORT = process.env.PORT || 5000;  // for heroku to find the PORT
 app.listen(PORT);
